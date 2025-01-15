@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> تسجيل دخول</title>
+    <style>
+        /* جعل الحقول تأخذ العرض الكامل */
+        input, label {
+            width: 100%;
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        /* تنسيق الحقل لتحديد المسافة */
+        fieldset {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        /* تنسيق الزر */
+        input[type="submit"], button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover, button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form method="post"> 
+        <fieldset>
+            <legend>تسجيل الدخول</legend>
+            <div>
+                <label for="txt">اسم المستخدم</label>
+                <input id="txt" type="text" placeholder="اسم المستخدم" required name="user">
+            </div>
+            
+            <div>
+                <label for="password">كلمة المرور</label>
+                <input id="password" type="password" placeholder="كلمة المرور" required name="password">
+            </div>
+            
+            <!-- حقل رقم الهاتف -->
+            <div>
+                <label for="phone">رقم الهاتف</label>
+                <input id="phone" type="tel" placeholder="رقم الهاتف" required name="phone">
+            </div>
+
+            <input type="submit" value="تسجيل الدخول">
+        </fieldset>
+    </form>
+
+    <br>
+
+    <a href="rg.html">
+        <button>التالي</button>
+    </a>
+
+</body>
+</html>
